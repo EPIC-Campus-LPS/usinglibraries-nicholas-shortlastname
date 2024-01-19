@@ -72,11 +72,35 @@ public class metadataEdit {
         }
     }
     public static void metadataFile(String fileName){
-        File textdoc = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + "_metadata.txt");
+        File image = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + ".jpg");
+        try {
+            File textdoc = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + "_metadata.txt");
+            if (textdoc.createNewFile()) {
+                System.out.println("File created: " + textdoc.getName());
+            } else {
+                System.out.println("File already exists, replacing");
+                textdoc.delete();
+                textdoc.createNewFile();
+            }
+
+            final ImageMetadata metadata = Imaging.getMetadata(image);
+
+            FileWriter fileWriter = new FileWriter(textdoc.getAbsoluteFile());
+            fileWriter.write(metadata.toString());
+
+            fileWriter.close();
+
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        } catch (ImageReadException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void main(String[] args) throws IOException, ImageReadException, ImageWriteException {
-        changeMetadata("image",39.61329238261948, -104.98496840057305);
-        readMetadata("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\new_image.jpg");
+        //changeMetadata("image",39.61329238261948, -104.98496840057305);
+        //readMetadata("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\newimage.jpg");
+        metadataFile("newimage");
     }
 }
