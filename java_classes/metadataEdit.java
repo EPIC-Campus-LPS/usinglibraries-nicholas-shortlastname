@@ -1,3 +1,5 @@
+package java_classes;
+
 import org.apache.commons.imaging.*;
 import org.apache.commons.imaging.common.ImageMetadata;
 import org.apache.commons.imaging.common.RationalNumber;
@@ -16,12 +18,12 @@ import java.io.*;
 
 public class metadataEdit {
     public static void changeMetadata(String fileName, double longitude, double latitude) throws IOException, ImageReadException, ImageWriteException {
-        try (FileOutputStream fos = new FileOutputStream("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\new" + fileName + ".jpg");
+        try (FileOutputStream fos = new FileOutputStream("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\java_classes\\images\\new_" + fileName + ".jpg");
              OutputStream os = new BufferedOutputStream(fos)) {
 
             TiffOutputSet outputSet = null;
 
-            final File file = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + ".jpg");
+            final File file = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\" + fileName + ".jpg");
             final ImageMetadata metadata = Imaging.getMetadata(file);
 
             final JpegImageMetadata jpegMetadata = (JpegImageMetadata) metadata;
@@ -72,9 +74,9 @@ public class metadataEdit {
         }
     }
     public static void metadataFile(String fileName){
-        File image = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + ".jpg");
+        File image = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\java_classes\\images\\" + fileName + ".jpg");
         try {
-            File textdoc = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\" + fileName + "_metadata.txt");
+            File textdoc = new File("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\java_classes\\images\\" + fileName + "_metadata.txt");
             if (textdoc.createNewFile()) {
                 System.out.println("File created: " + textdoc.getName());
             } else {
@@ -99,8 +101,8 @@ public class metadataEdit {
     }
 
     public static void main(String[] args) throws IOException, ImageReadException, ImageWriteException {
-        //changeMetadata("image",39.61329238261948, -104.98496840057305);
-        //readMetadata("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\images\\newimage.jpg");
-        metadataFile("newimage");
+        changeMetadata("image",39.61329238261948, -104.98496840057305);
+        readMetadata("C:\\Users\\nicholasu750_lpsk12\\IdeaProjects\\usinglibraries-nicholas-shortlastname\\java_classes\\images\\new_image.jpg");
+        metadataFile("new_image");
     }
 }

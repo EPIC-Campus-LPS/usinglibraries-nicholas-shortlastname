@@ -3,10 +3,8 @@
 Install and add the [Apache Commons Library](https://commons.apache.org/proper/commons-lang/download_lang.cgi) to a new Java project.
 Install and add the [Guava Library](https://github.com/google/guava) to the same Java project.
 ### Send an Email
-1. Send me an email at gormes@lps.k12.co.us using the [Apache Commons Email](https://commons.apache.org/proper/commons-email/index.html) module.
-2. Include an image and your `.java` file as an attachments on the email.
-3. The user guide on the Email module gives a straightforward template to do this.
-4. For an additional challenge, format your email using HTML
+1. Using the Apache Commons CSV reader, read in this file: https://www.kaggle.com/datasets/jkraak/lego-sets-and-themes-database
+2. Make a console program to print out the average number of pieces of every LEGO set in this spreadsheet.
 ### Extract Metadata
 1. Read in the image `image.jpg` using the [Adobe Commons Imaging](https://commons.apache.org/proper/commons-imaging/index.html) module.
 2. Create a text file with all of the Exif metadata from the image.

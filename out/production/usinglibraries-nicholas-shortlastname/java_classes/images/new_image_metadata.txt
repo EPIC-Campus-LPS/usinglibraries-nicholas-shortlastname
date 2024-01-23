@@ -1,0 +1,67 @@
+Exif metadata:
+		Root: 
+			Make: 'Canon'
+			Model: 'Canon PowerShot S40'
+			Orientation: 1
+			XResolution: 180
+			YResolution: 180
+			ResolutionUnit: 2
+			DateTime: '2003:12:14 12:01:44'
+			YCbCrPositioning: 1
+			ExifOffset: 160
+			GPSInfo: 1392
+
+		Exif: 
+			ExposureTime: 1/500 (0.002)
+			FNumber: 49/10 (4.9)
+			ExifVersion: 48, 50, 50, 48
+			DateTimeOriginal: '2003:12:14 12:01:44'
+			DateTimeDigitized: '2003:12:14 12:01:44'
+			ComponentsConfiguration: 1, 2, 3, 0
+			CompressedBitsPerPixel: 5
+			ShutterSpeedValue: 287/32 (8.969)
+			ApertureValue: 3/10 (0.3)
+			ExposureCompensation: 0
+			MaxApertureValue: 194698/65536 (2.971)
+			MeteringMode: 2
+			Flash: 24
+			FocalLength: 682/32 (21.312)
+			MakerNote: 12, 0, 1, 0, 3, 0, 40, 0, 0, 0, 68, 4, 0, 0, 2, 0, 3, 0, 4, 0, 0, 0, -108, 4, 0, 0, 3, 0, 3, 0, 4, 0, 0, 0, -100, 4, 0, 0, 4, 0, 3, 0, 27, 0, 0, 0, -92, 4, 0, 0, 0... (450)
+			UserComment: ''
+			FlashpixVersion: 48, 49, 48, 48
+			ColorSpace: 1
+			ExifImageWidth: 2272
+			ExifImageLength: 1704
+			InteropOffset: 880
+			FocalPlaneXResolution: 2272000/280 (8,114.286)
+			FocalPlaneYResolution: 1704000/210 (8,114.286)
+			FocalPlaneResolutionUnit: 2
+			SensingMethod: 2
+			FileSource: 3
+			CustomRendered: 0
+			ExposureMode: 0
+			WhiteBalance: 0
+			DigitalZoomRatio: 1
+			SceneCaptureType: 0
+
+		Interoperability: 
+			InteroperabilityIndex: 'R98'
+			InteroperabilityVersion: 48, 49, 48, 48
+			RelatedImageWidth: 2272
+			RelatedImageLength: 1704
+
+		Gps: 
+			GPSLatitudeRef: 'S'
+			GPSLatitude: 104, 59, 70423/11964 (5.886)
+			GPSLongitudeRef: 'E'
+			GPSLongitude: 39, 36, 437229/9137 (47.853)
+
+		Sub:  (jpegImageData)
+			Compression: 6
+			XResolution: 180
+			YResolution: 180
+			ResolutionUnit: 2
+			JpgFromRawStart: 2036
+			JpgFromRawLength: 5448
+
+No Photoshop (IPTC) metadata.

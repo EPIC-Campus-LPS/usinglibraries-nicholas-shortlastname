@@ -9,7 +9,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="google.guava" level="project" />
     <orderEntry type="library" name="commons-lang3-3.14" level="project" />
-    <orderEntry type="library" name="commons-email-1" level="project" />
     <orderEntry type="library" name="commons-imaging-1" level="project" />
+    <orderEntry type="library" name="commons-compress-1.25" level="project" />
+    <orderEntry type="library" name="commons-numbers-1" level="project" />
+    <orderEntry type="library" name="commons-csv-1.10" level="project" />
   </component>
 </module>

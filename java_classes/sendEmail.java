@@ -1,7 +1,12 @@
+/*
+
+package java_classes;
+
 import org.apache.commons.mail.*;
 
 public class sendEmail {
     public static void main(String[] args) throws EmailException {
+
         Email email = new SimpleEmail();
         email.setHostName("smtp.googlemail.com");
         email.setSmtpPort(465);
@@ -12,5 +17,8 @@ public class sendEmail {
         email.setMsg("This is a test mail ... :-)");
         email.addTo("nicholasu750@lpsk12.org");
         email.send();
+
     }
 }
+
+ */
